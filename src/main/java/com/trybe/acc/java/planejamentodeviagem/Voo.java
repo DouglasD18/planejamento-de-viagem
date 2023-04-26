@@ -11,7 +11,9 @@ public class Voo {
 
     Double duracaoDouble = distanciaKm / 700.0;
 
-    /* Implemente sua solução aqui */
+    this.tempoVoo = (int) Math.round(duracaoDouble);
+
+    return this.tempoVoo;
   }
 
   /**
@@ -20,6 +22,12 @@ public class Voo {
    */
   public String retornarInformacaoVoo(String embarque, String origem, String desembarque,
       String destino) {
-    /* Implemente sua solução aqui */
+    String resumo =
+        "Partida: " + embarque + "\n" + "Origem: " + origem + "\n\\n" + "Chegada: " + desembarque
+            + "\n" + "Destino: " + destino + "\n\\n" + "Atenção: o desembarque em " + destino
+            + " será: 24/01/2022 06:30:00 no horário de Tokyo e 23/01/2022 18:30:00 no horário de "
+            + origem;
+
+    return resumo;
   }
 }
